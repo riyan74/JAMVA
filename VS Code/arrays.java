@@ -204,6 +204,9 @@ public class arrays{
     }
 }
 */
+/* 
+
+//      maximum element in the array
 
 import java.util.Scanner;
 import java.util.Arrays;
@@ -232,3 +235,47 @@ public class arrays{
         return max;
     }
 }
+*/
+
+/* 
+
+//     reversing of array elements 
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class arrays{
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter array elements: ");
+        for(int i=0;i<arr.length;i++){
+            arr[i]=sc.nextInt();
+        }
+
+        reverse(arr);
+        System.out.println(Arrays.toString(arr));
+        
+    }
+
+    static void reverse(int[] arr){
+        int start = 0;
+        int end = arr.length - 1;
+
+        while(start < end){
+            swap(arr,start,end);
+            start++;
+            end--;
+        }
+    }
+
+    static void swap(int[] arr,int i, int j){
+        int temp;
+        temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+
+}
+
+*/
